@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  /* primary colors */
+
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /* neutral colors */
+
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+/*  MOBILE DESIGN FIRST */  
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 0;  
+  background: var(--pale-blue);  
+  max-width: 375px;  
+  font-size: 16px;
+}
+
+.card {
+  margin-top: 40px;
+  background:white;
+  border-radius: 20px;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.selection img {
+  width: 60px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.5rem;    
+}
+
+.info {
+  padding: 0 30px;
+}
+
+.info .desc {
+  text-align: center;
+  color: var(--desaturated-blue);
+  font-size: 1rem;
+  line-height: 28px;
+  padding: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+ 
+.selection {
+  background: var(--very-pale-blue);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  border-radius: 10px;
+}
+
+.selection .plan {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  margin-left: -15px;
+  font-size: 1rem;
+}
+
+.selection img {
+  margin-left: -10px;
+}
+
+.selection .plan span {
+  font-weight: normal;
+  color: var(--desaturated-blue);
+  font-size: 0.9rem;
+  padding-top: 5px;
+}
+
+.selection .change {
+  color:hsl(245, 75%, 52%);
+  text-decoration: underline;
+  font-weight: bold;  
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+button {
+  padding: 16px 35px;
+  background: var(--bright-blue);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 8px 20px 0 rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+
+.buttons a {
+  margin: 20px auto 30px auto;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: bold;
+  color:hsl(224, 23%, 55%);
+  cursor: pointer;
+}
+
+.change:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.buttons a:hover {
+  color: hsl(224, 23%, 30%);
+}
+
+.attribution {
+  margin-bottom: 40px;
+  padding: 12px;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 3px;
+} 
+
+.attribution a {
+  color: palevioletred;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;  
+}
+
+.attribution a:hover {
+  opacity: 0.8;
+}
+
+@media only screen and (min-width: 500px) {
+  .card {
+    width: 500px;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 900;
+  }
+
+  .info {
+    padding: 0 60px;
+  }
+
+  .info .desc {
+    font-size: 1.2rem;
+  }
+
+  .selection .plan {
+    font-size: 1.1rem;    
+  }
+
+  .selection .plan span {
+    font-size: 1.1rem;
+  }
+
+  button {
+    margin: 0;
+    font-size: 1rem;
+    padding: 18px 0;
+    margin: 10px 0;
+  }
+}
